@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "cross-env APP_TYPE=mobile UMI_ENV=local PORT=3001 max dev",
+    "build": "cross-env APP_TYPE=mobile UMI_ENV=prod  PORT=3001 max build",
+    "analyze": "cross-env APP_TYPE=mobile UMI_ENV=prod ANALYZE=1 max build"
+  },
+  "dependencies": {
+    "@pinecore/common": "workspace:^1.0.0",
+    "@ant-design/icons": "^5.3.7",
+    "@ant-design/pro-components": "^2.7.10",
+    "ahooks": "^3.7.4",
+    "antd": "4",
+    "axios": "^1.4.0",
+    "classnames": "2.x",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+  }
+}

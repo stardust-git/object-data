@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist",
+    "**/__test__",
+    "test",
+    "docs",
+    "tests"
+  ],
+  "include": [
+    "./typings.d.ts"
+  ]
+}

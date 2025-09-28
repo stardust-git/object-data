@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./"
+  },
+  "include": [
+    "../../typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "assets",
+    "scripts",
+    "**/__test__",
+    "test",
+    "docs",
+    "tests"
+  ]
+}

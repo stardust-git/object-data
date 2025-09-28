@@ -1,0 +1,2 @@
+export type SafeAny = any;
+
