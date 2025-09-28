@@ -37,7 +37,7 @@ export const ConsumptionTypeMap: Record<ConsumptionType, {
     description: '攒衣服经费',
   },
   [ConsumptionType.吃饭]: {
-    description: "吃饭消费",
+    description: "吃饭消费，每天生活费不超过50，每周一次两人大餐多花200",
     autoAdd: false,
     necessary: true,
   },
