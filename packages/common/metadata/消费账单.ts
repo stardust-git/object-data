@@ -61,7 +61,7 @@ export enum WalletAddress {
 /**
  * 消费账单
  */
-export const consumptionBill: {
+const consumptionBill: {
   createTime: string; // 创建时间
   billDate: string;   // 账单日期，通常在下月初统计上月的消费，并补充基础消费钱包
   baseBill: { // 消费明细
@@ -108,3 +108,5 @@ export const consumptionBill: {
     largeBill: [],
   }
 ]
+
+export default consumptionBill;
