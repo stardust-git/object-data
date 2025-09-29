@@ -7,12 +7,10 @@ export enum ConsumptionType {
   买衣服 = '买衣服',
   吃饭 = '吃饭',
   日常开销 = '日常开销',
+  住房月供 = '住房月供',
 }
 
-/**
- * 消费类型相关说明
- */
-export const ConsumptionTypeMap: Record<ConsumptionType, {
+export interface ConsumptionTypeMapModel {
   description: string; // 消费类型描述
   necessary: boolean; // 是否必要消费
   autoAdd: boolean; // 是否自动添加
@@ -20,7 +18,17 @@ export const ConsumptionTypeMap: Record<ConsumptionType, {
     updateTime: string; // 更新时间
     updateContent: string; // 更新内容
   }[]; // 更新日志
-}> = {
+}
+
+/**
+ * 消费类型相关说明
+ */
+export const ConsumptionTypeMap: Record<ConsumptionType, ConsumptionTypeMapModel> = {
+  [ConsumptionType.住房月供]: {
+    necessary: true,
+    autoAdd: true,
+    description: '每月的住房月供',
+  },
   [ConsumptionType.娱乐会员]: {
     necessary: false,
     autoAdd: true,
@@ -56,6 +64,7 @@ export enum WalletAddress {
   支付宝_小荷包_旅游经费 = '支付宝_小荷包_旅游经费',
   支付宝_小荷包_买衣服 = '支付宝_小荷包_买衣服',
   兴业银行_天天宝 = '兴业银行_天天宝',
+  支付宝_小荷包_住房月供 = '支付宝_小荷包_住房月供',
 }
 
 /**

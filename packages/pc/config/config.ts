@@ -14,6 +14,10 @@ export default defineConfig({
   history: { // 路由类型
     type: 'browser',
   },
-  mfsu: false
+  mfsu: false,
+  cssLoaderModules: {
+    // 配置驼峰式使用
+    exportLocalsConvention: 'camelCase'
+  }
   // model: {},  开启 useModel
 });

@@ -9,6 +9,11 @@ const consumptionBill: ConsumptionItemModel[] = [
     billDate: "2025-09-01",
     baseBill: [
       {
+        type: ConsumptionType.住房月供,
+        price: 2000,
+        wallet: WalletAddress.支付宝_小荷包_住房月供,
+      },
+      {
         type: ConsumptionType.娱乐会员,
         price: 100,
         wallet: WalletAddress.支付宝_小荷包_娱乐会员,
