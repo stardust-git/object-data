@@ -22,8 +22,8 @@ const ConsumptionBillView = () => {
       {
         consumptionBillData.map((bill, index) => {
           return (
-            <div key={index}>
-              <h1>{moment(bill.billDate).format('YY-MM')}</h1>
+            <div key={bill.createTime}>
+              <h2>{moment(bill.billDate).format('YY-MM')}</h2>
               <div>
                 <span>基础消费</span>
                 <span>{sumData(bill.baseBill)}</span>
