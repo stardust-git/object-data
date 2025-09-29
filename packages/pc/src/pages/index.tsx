@@ -1,17 +1,12 @@
 import React from 'react';
 import styles from './index.less';
-import {testUtil} from "@pinecore/common/utils/test.util";
-import {environment} from "@pinecore/common/environment";
+import ConsumptionBillView from "@/components/消费账单视图";
 
 export default function Page() {
   return (
     <div>
       <h1 className={styles.title}>Page index</h1>
-      <button onClick={() => {
-        testUtil();
-        console.log(environment, 'environment');
-      }}>测试
-      </button>
+      <ConsumptionBillView/>
     </div>
   );
 }
