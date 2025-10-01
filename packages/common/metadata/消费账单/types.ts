@@ -8,6 +8,7 @@ export enum ConsumptionType {
   吃饭 = '吃饭',
   日常开销 = '日常开销',
   住房月供 = '住房月供',
+  社交 = '社交',
 }
 
 export interface ConsumptionTypeMapModel {
@@ -24,6 +25,11 @@ export interface ConsumptionTypeMapModel {
  * 消费类型相关说明
  */
 export const ConsumptionTypeMap: Record<ConsumptionType, ConsumptionTypeMapModel> = {
+  [ConsumptionType.社交]: {
+    necessary: false,
+    autoAdd: false,
+    description: '用于社交相关的消费',
+  },
   [ConsumptionType.住房月供]: {
     necessary: true,
     autoAdd: true,
@@ -79,8 +85,10 @@ export interface ConsumptionItemModel {
     wallet: WalletAddress; // 钱包地址
   }[];
   extraBill: { // 额外的大账单
+    time: string; // 大账单时间
+    type: ConsumptionType; // 大账单类型
     name: string; // 大账单名称
     price: number; // 大账单金额
-    desc: string; // 大账单描述
+    desc?: string; // 大账单描述
   }[]
 }
