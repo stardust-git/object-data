@@ -5,9 +5,9 @@ import {ConsumptionItemModel, ConsumptionType, WalletAddress} from "./types";
  */
 const consumptionBill: ConsumptionItemModel[] = [
   {
-    createTime: "2025-09-28",
-    billDate: "2025-09-01",
-    baseBill: [
+    createTime: "2025-10-01",
+    billDate: "2025-10-01",
+    preBill: [
       {
         type: ConsumptionType.住房月供,
         price: 2000,
@@ -39,7 +39,7 @@ const consumptionBill: ConsumptionItemModel[] = [
         wallet: WalletAddress.兴业银行_天天宝,
       },
     ],
-    largeBill: [],
+    extraBill: [],
   }
 ]
 

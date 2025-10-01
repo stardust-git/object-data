@@ -72,13 +72,13 @@ export enum WalletAddress {
  */
 export interface ConsumptionItemModel {
   createTime: string; // 创建时间
-  billDate: string;   // 账单日期，通常在下月初统计上月的消费，并补充基础消费钱包
-  baseBill: { // 消费明细
+  billDate: string;   // 统计的账单日期
+  preBill: { // 预支出的消费账单
     type: ConsumptionType; // 消费类型
     price: number; // 金额
     wallet: WalletAddress; // 钱包地址
   }[];
-  largeBill: {
+  extraBill: { // 额外的大账单
     name: string; // 大账单名称
     price: number; // 大账单金额
     desc: string; // 大账单描述
