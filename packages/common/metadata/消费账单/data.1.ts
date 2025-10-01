@@ -76,19 +76,21 @@ const consumptionBill: ConsumptionItemModel[] = [
         wallet: WalletAddress.兴业银行_天天宝,
       },
     ],
-    extraBill: [{
-      time: '2025-9-21',
-      price: 240,
-      type: ConsumptionType.娱乐会员,
-      name: 'WPS升级大会员',
-      desc: 'WPS升级大会员10年'
-    },{
-      time: '2025-9-20',
-      price: 480,
-      type: ConsumptionType.社交,
-      name: '国庆回家高铁票',
-      desc: '两个人，往返重庆和成都'
-    }],
+    extraBill: [
+      {
+        time: '2025-9-21',
+        price: 240,
+        type: ConsumptionType.娱乐会员,
+        name: 'WPS升级大会员',
+        desc: 'WPS升级大会员10年'
+      },
+      {
+        time: '2025-9-20',
+        price: 480,
+        type: ConsumptionType.社交,
+        name: '国庆回家高铁票',
+        desc: '两个人，往返重庆和成都'
+      }],
   }
 ]
 
