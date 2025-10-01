@@ -1,5 +1,6 @@
 import data1 from "./data.1";
 
-export default [
+const walletManagementData = [
   ...data1,
 ]
+export default walletManagementData

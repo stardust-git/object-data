@@ -78,7 +78,7 @@ export enum WalletAddress {
  */
 export interface ConsumptionItemModel {
   createTime: string; // 创建时间
-  billDate: string;   // 统计的账单日期
+  countYM: string;   // 统计的账单日期，统计的是当月的账单
   preBill: { // 预支出的消费账单
     type: ConsumptionType; // 消费类型
     price: number; // 金额

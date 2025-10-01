@@ -1,5 +1,6 @@
 import data1 from "./data.1";
 
-export default [
+const incomeManagementData = [
   ...data1,
 ]
+export default incomeManagementData

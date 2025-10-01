@@ -3,8 +3,8 @@ import {IncomeManagementModel, IncomeType} from "./types";
 const incomeManagement: IncomeManagementModel[] = [
   {
     createTime: '2025-10-01',
-    countTime: '2025-09-01',
-    income: [
+    countYM: '2025-09',
+    data: [
       {
         type: IncomeType.工资,
         time: '2025-10-01',

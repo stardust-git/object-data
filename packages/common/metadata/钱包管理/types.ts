@@ -1,3 +1,5 @@
+import {BillRecordModel} from "../../models/metadata.model";
+
 export enum WalletType {
   支付宝_余额宝 = '支付宝_余额宝',
   支付宝_银行存款 = '支付宝_银行存款',
@@ -36,12 +38,8 @@ export const WalletInfoMap: Record<WalletType, {
 }
 
 
-export interface WalletManagementModel {
-  createTime: string; // 创建时间
-  countTime: string; // 统计的时间，一般是统计上一个月的数据
-  wallets: { // 钱包
-    type: WalletType;
-    price: number;
-  }[];
-}
+export type WalletManagementModel = BillRecordModel<{ // 钱包
+  type: WalletType;
+  price: number;
+}>;
 

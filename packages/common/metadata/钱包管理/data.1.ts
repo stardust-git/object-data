@@ -3,8 +3,8 @@ import {WalletManagementModel, WalletType} from "./types";
 const walletManagement: WalletManagementModel[] = [
   {
     createTime: '2025-10-01',
-    countTime: '2025-10-01',
-    wallets: [
+    countYM: '2025-09',
+    data: [
       {
         type: WalletType.支付宝_余额宝,
         price: 1582,
