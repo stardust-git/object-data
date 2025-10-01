@@ -7,6 +7,18 @@ const incomeManagement: IncomeManagementModel[] = [
     income: [
       {
         type: IncomeType.工资,
+        time: '2025-10-01',
+        name: '10月份工资',
+        price: 11147,
+      },
+      {
+        type: IncomeType.工资,
+        time: '2025-10-01',
+        name: '通讯补贴',
+        price: 300,
+      },
+      {
+        type: IncomeType.工资,
         time: '2025-09-28',
         name: '国庆节福利',
         price: 1800,
