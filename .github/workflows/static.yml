@@ -37,7 +37,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.x  # 指定Node版本（根据项目需求调整）
-          cache: 'pnpm'        # 缓存pnpm依赖，加速构建
+          cache: 'npm'        # 缓存pnpm依赖，加速构建
 
       # 安装pnpm包管理器
       - name: 安装pnpm
