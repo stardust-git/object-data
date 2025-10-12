@@ -29,15 +29,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 拉取代码
         uses: actions/checkout@v4
-      - name: Setup Pages
+      - name: 配置Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: 上传打包产物
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: 'docs'
-      - name: Deploy to GitHub Pages
+      - name: 部署到GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
