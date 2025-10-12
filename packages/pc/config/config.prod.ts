@@ -3,5 +3,5 @@ export default {
   history: {
     type: 'hash',
   },
-  outputPath: '../../docs/pc',
+  outputPath: '../../dist/pc',
 };
