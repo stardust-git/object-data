@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "cross-env APP_TYPE=mobile UMI_ENV=local PORT=3001 max dev",
-    "build": "cross-env APP_TYPE=mobile UMI_ENV=prod  PORT=3001 max build",
+    "build": "cross-env APP_TYPE=mobile UMI_ENV=prod max build",
     "analyze": "cross-env APP_TYPE=mobile UMI_ENV=prod ANALYZE=1 max build"
   },
   "dependencies": {

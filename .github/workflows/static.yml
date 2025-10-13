@@ -51,7 +51,7 @@ jobs:
 
       # 执行打包命令（核心步骤）
       - name: 打包项目
-        run: pnpm run pc:build  # 替换为项目实际的打包命令，如yarn build、vite build等
+        run: pnpm run pages:build  # 替换为项目实际的打包命令，如yarn build、vite build等
 
       - name: 配置Pages
         uses: actions/configure-pages@v5
