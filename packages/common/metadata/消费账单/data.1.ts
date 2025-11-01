@@ -5,6 +5,43 @@ import {ConsumptionItemModel, ConsumptionType, WalletAddress} from "./types";
  */
 const consumptionBill: ConsumptionItemModel[] = [
   {
+    createTime: "2025-11-01",
+    countYM: "2025-11",
+    preBill: [
+      {
+        type: ConsumptionType.住房月供,
+        price: 2000,
+        wallet: WalletAddress.支付宝_小荷包_住房月供,
+      },
+      {
+        type: ConsumptionType.娱乐会员,
+        price: 100,
+        wallet: WalletAddress.支付宝_小荷包_娱乐会员,
+      },
+      {
+        type: ConsumptionType.旅游经费,
+        price: 200,
+        wallet: WalletAddress.支付宝_小荷包_旅游经费,
+      },
+      {
+        type: ConsumptionType.买衣服,
+        price: 200,
+        wallet: WalletAddress.支付宝_小荷包_买衣服,
+      },
+      {
+        type: ConsumptionType.吃饭,
+        price: 2000,
+        wallet: WalletAddress.兴业银行_天天宝,
+      },
+      {
+        type: ConsumptionType.日常开销,
+        price: 500,
+        wallet: WalletAddress.兴业银行_天天宝,
+      },
+    ],
+    extraBill: [],
+  },
+  {
     createTime: "2025-10-01",
     countYM: "2025-10",
     preBill: [
@@ -39,7 +76,13 @@ const consumptionBill: ConsumptionItemModel[] = [
         wallet: WalletAddress.兴业银行_天天宝,
       },
     ],
-    extraBill: [],
+    extraBill: [{
+      time: '2025-10-2',
+      type: ConsumptionType.社交,
+      price: 400,
+      name: '买烟',
+      desc: '去长寿买烟'
+    }],
   },
   {
     createTime: "2025-09-28",

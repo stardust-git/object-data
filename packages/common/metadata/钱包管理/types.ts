@@ -22,19 +22,17 @@ export enum WalletStorage {
 export const WalletInfoMap: Record<WalletType, {
   desc: string;
   storage: WalletStorage;
-  update?: {
-    desc: string;
-    time: string;
-  }[]
+  usage: '储蓄' | '消费' | '理财',
+  createTime: string;
 }> = {
-  [WalletType.兴业银行_理财]: {desc: "", storage: WalletStorage.兴业银行},
-  [WalletType.微信_零钱通]: {desc: "", storage: WalletStorage.微信},
-  [WalletType.招商银行_朝朝宝]: {desc: "", storage: WalletStorage.招商银行},
-  [WalletType.招商银行_理财]: {desc: "", storage: WalletStorage.招商银行},
-  [WalletType.支付宝_余额宝]: {desc: "", storage: WalletStorage.支付宝},
-  [WalletType.支付宝_银行存款]: {desc: "", storage: WalletStorage.支付宝},
-  [WalletType.网商银行_余利宝]: {desc: "", storage: WalletStorage.网商银行},
-  [WalletType.网商银行_理财]: {desc: "", storage: WalletStorage.网商银行}
+  [WalletType.兴业银行_理财]: {desc: "", storage: WalletStorage.兴业银行, usage: '消费', createTime: '2025-10-01'},
+  [WalletType.微信_零钱通]: {desc: "", storage: WalletStorage.微信, usage: '储蓄', createTime: '2025-10-01'},
+  [WalletType.招商银行_朝朝宝]: {desc: "", storage: WalletStorage.招商银行, usage: '储蓄', createTime: '2025-10-01'},
+  [WalletType.招商银行_理财]: {desc: "", storage: WalletStorage.招商银行, usage: '储蓄', createTime: '2025-10-01'},
+  [WalletType.支付宝_余额宝]: {desc: "", storage: WalletStorage.支付宝, usage: '储蓄', createTime: '2025-10-01'},
+  [WalletType.支付宝_银行存款]: {desc: "", storage: WalletStorage.支付宝, usage: '储蓄', createTime: '2025-10-01'},
+  [WalletType.网商银行_余利宝]: {desc: "", storage: WalletStorage.网商银行, usage: '消费', createTime: '2025-10-01'},
+  [WalletType.网商银行_理财]: {desc: "", storage: WalletStorage.网商银行, usage: '储蓄', createTime: '2025-10-01'},
 }
 
 

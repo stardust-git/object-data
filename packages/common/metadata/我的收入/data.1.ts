@@ -2,6 +2,25 @@ import {IncomeManagementModel, IncomeType} from "./types";
 
 const incomeManagement: IncomeManagementModel[] = [
   {
+    createTime: '2025-11-01',
+    countYM: '2025-11',
+    data: [
+
+    ]
+  },
+  {
+    createTime: '2025-11-01',
+    countYM: '2025-10',
+    data: [
+      {
+        type: IncomeType.理财,
+        time: '2025-10-15',
+        name: '10月份刘雨航理财利息',
+        price: 2200,
+      }
+    ]
+  },
+  {
     createTime: '2025-10-01',
     countYM: '2025-09',
     data: [
@@ -47,6 +66,12 @@ const incomeManagement: IncomeManagementModel[] = [
         name: '通讯补贴',
         price: 300,
       },
+      {
+        type: IncomeType.理财,
+        time: '2025-09-15',
+        name: '9月份刘雨航理财利息',
+        price: 1800,
+      }
     ]
   }
 ]
